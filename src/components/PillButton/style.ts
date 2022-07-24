@@ -14,10 +14,7 @@ const root = style({
       cursor: 'pointer',
     }
   }
-
 })
-
-
 
 export const PillButtonStyle = {
   root,

@@ -10,7 +10,7 @@ type Props = {
 
 export const Newsletter: FC<Props> = (props) => {
 
-  const { send, problem, message='Thank you for signing up for the Breally newsletter.' } = props;
+  const { send, problem, message } = props;
 
   const [email, setEmail] = useState('');
 
@@ -26,7 +26,6 @@ export const Newsletter: FC<Props> = (props) => {
         />
         <PillButton label='Submit' onClick={() => send(email)}/>
       </div>
-
       {message && <p className={styles.feedback(problem)}>{message}</p>}
     </section>
   )
